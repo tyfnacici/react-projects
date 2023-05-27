@@ -1,11 +1,11 @@
-import React from "react";
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
+import React from "react"
+import Container from "react-bootstrap/Container"
+import Nav from "react-bootstrap/Nav"
+import Navbar from "react-bootstrap/Navbar"
 
-const Navigasyon = () => {
+const Header = () => {
   return (
-    <Navbar bg="light" variant="light" expand="lg">
+    <Navbar bg="light" variant="light">
       <Container>
         <Navbar.Brand href="#home">🏠 Yönetim Paneli</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -20,7 +20,7 @@ const Navigasyon = () => {
         </Navbar.Collapse>
       </Container>
     </Navbar>
-  );
-};
+  )
+}
 
-export default Navigasyon;
+export default Header
