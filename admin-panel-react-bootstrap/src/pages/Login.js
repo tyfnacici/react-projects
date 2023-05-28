@@ -1,6 +1,7 @@
 import Button from "react-bootstrap/Button"
 import Form from "react-bootstrap/Form"
 import { useEffect, useState } from "react"
+import Container from "react-bootstrap/esm/Container"
 
 const Login = () => {
   const [isLoading, setLoading] = useState(false)
@@ -20,7 +21,7 @@ const Login = () => {
   const handleClick = () => setLoading(true)
 
   return (
-    <>
+    <Container className="d-flex justify-content-center">
       <h3 className="mb-5">Beyaz Eşya Bayii Otomasyon Yönetim Paneli</h3>
       <Form className="d-flex flex-column justify-content-center">
         <Form.Group className="mb-3" controlId="formUsername">
@@ -39,7 +40,7 @@ const Login = () => {
           {isLoading ? "Yükleniyor…" : "Giriş yap 🔐"}
         </Button>
       </Form>
-    </>
+    </Container>
   )
 }
 

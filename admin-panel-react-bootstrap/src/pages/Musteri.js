@@ -1,35 +1,36 @@
 import React from "react"
 import Table from "../components/Tablo"
 import Button from "react-bootstrap/Button"
-import Form from "react-bootstrap/Form"
-import InputGroup from "react-bootstrap/InputGroup"
 import Olustur from "../components/Olustur"
-import Container from "react-bootstrap/esm/Container"
+import Row from "react-bootstrap/Row"
+import Col from "react-bootstrap/esm/Col"
 
 const Musteri = () => {
   const [modalShow, setModalShow] = React.useState(false)
   return (
-    <Container className="" fluid>
-      <Container>
-        <InputGroup className="mb-3">
-          <Form.Control
-            placeholder="Düzenlenecek Müşteri'nin id'sini giriniz."
-            aria-label="Düzenlenecek Müşteri'nin id'sini giriniz."
-            aria-describedby="basic-addon2"
-          />
-          <Button variant="outline-secondary" id="button-addon2">
-            Düzenle ✍️
+    <Col>
+      <div className="d-flex flex-row justify-content-between align-items-center">
+        <div className="d-flex">
+          <Button variant="primary" onClick={() => setModalShow(true)}>
+            Düzenle
           </Button>
-        </InputGroup>
-        <Button variant="primary" onClick={() => setModalShow(true)}>
-          Kullanıcı Oluştur
-        </Button>
-        <Olustur show={modalShow} onHide={() => setModalShow(false)} />
-      </Container>
-      <Container>
+          <Olustur show={modalShow} onHide={() => setModalShow(false)} />
+        </div>
+        <div className="d-flex gap-3">
+          <Button variant="success" onClick={() => setModalShow(true)}>
+            Oluştur
+          </Button>
+          <Olustur show={modalShow} onHide={() => setModalShow(false)} />
+          <Button variant="danger" onClick={() => setModalShow(true)}>
+            Sil
+          </Button>
+          <Olustur show={modalShow} onHide={() => setModalShow(false)} />
+        </div>
+      </div>
+      <Row className="mt-3">
         <Table />
-      </Container>
-    </Container>
+      </Row>
+    </Col>
   )
 }
 

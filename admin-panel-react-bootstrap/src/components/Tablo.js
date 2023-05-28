@@ -1,10 +1,9 @@
 import React from "react"
 import Table from "react-bootstrap/Table"
-import Button from "react-bootstrap/Button"
 
 const Tablo = () => {
   return (
-    <Table className="fs-5" striped bordered hover fs-1>
+    <Table className="fs-5" striped bordered hover>
       <thead>
         <tr>
           <th>#</th>
@@ -26,6 +25,20 @@ const Tablo = () => {
           <td>Jacob</td>
           <td>Thornton</td>
           <td>@fat</td>
+          <td>Lorem</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Larry</td>
+          <td>the Bird</td>
+          <td>@twitter</td>
+          <td>Lorem</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Larry</td>
+          <td>the Bird</td>
+          <td>@twitter</td>
           <td>Lorem</td>
         </tr>
         <tr>

@@ -1,6 +1,6 @@
 import Navigasyon from "./components/Header"
 import "bootstrap/dist/css/bootstrap.min.css"
-
+import Row from "react-bootstrap/esm/Row"
 import Login from "./pages/Login"
 import Container from "react-bootstrap/esm/Container"
 import Musteri from "./pages/Musteri"
@@ -8,17 +8,19 @@ import Musteri from "./pages/Musteri"
 function App() {
   return (
     <Container
-      className="d-flex justify-content-center flex-row bg-light text-dark"
+      className="bg-light text-dark d-flex justify-content-center align-items-center"
       style={{ height: "100vh" }}
       fluid
     >
-      <header>
+      <Row>
         <Navigasyon />
-      </header>
-      <main className="align-items-center my-auto">
-        {/* <Login /> */}
-        <Musteri />
-      </main>
+      </Row>
+      <Container>
+        <Row>
+          {/*<Login />*/}
+          <Musteri />
+        </Row>
+      </Container>
     </Container>
   )
 }
