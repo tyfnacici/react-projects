@@ -1,4 +1,5 @@
 import React from "react"
+import { useState } from "react"
 import Table from "../components/Tablo"
 import Button from "react-bootstrap/Button"
 import Olustur from "../components/Olustur"
@@ -6,25 +7,40 @@ import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/esm/Col"
 
 const Musteri = () => {
-  const [modalShow, setModalShow] = React.useState(false)
+  const [duzenleModalShow, setDuzenleModalShow] = useState(false)
+  const [olusturModalShow, setOlusturModalShow] = useState(false)
+  const [silModalShow, setSilModalShow] = useState(false)
+
   return (
     <Col>
       <div className="d-flex flex-row justify-content-between align-items-center">
         <div className="d-flex">
-          <Button variant="primary" onClick={() => setModalShow(true)}>
+          <Button variant="primary" onClick={() => setDuzenleModalShow(true)}>
             Düzenle
           </Button>
-          <Olustur show={modalShow} onHide={() => setModalShow(false)} />
+          <Olustur
+            title="Müşteri Düzenle"
+            show={duzenleModalShow}
+            onHide={() => setDuzenleModalShow(false)}
+          />
         </div>
         <div className="d-flex gap-3">
-          <Button variant="success" onClick={() => setModalShow(true)}>
+          <Button variant="success" onClick={() => setOlusturModalShow(true)}>
             Oluştur
           </Button>
-          <Olustur show={modalShow} onHide={() => setModalShow(false)} />
-          <Button variant="danger" onClick={() => setModalShow(true)}>
+          <Olustur
+            title="Müşteri Oluştur"
+            show={olusturModalShow}
+            onHide={() => setOlusturModalShow(false)}
+          />
+          <Button variant="danger" onClick={() => setSilModalShow(true)}>
             Sil
           </Button>
-          <Olustur show={modalShow} onHide={() => setModalShow(false)} />
+          <Olustur
+            title="Müşteri Sil"
+            show={silModalShow}
+            onHide={() => setSilModalShow(false)}
+          />
         </div>
       </div>
       <Row className="mt-3">

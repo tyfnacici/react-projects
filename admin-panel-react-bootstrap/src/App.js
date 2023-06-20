@@ -1,5 +1,4 @@
 import Navigasyon from "./components/Header"
-import "bootstrap/dist/css/bootstrap.min.css"
 import Row from "react-bootstrap/esm/Row"
 import Login from "./pages/Login"
 import Container from "react-bootstrap/esm/Container"
