@@ -5,7 +5,7 @@ const imageList = [
   {
     id: 1,
     src: require("../images/categories/new.jpeg"),
-    alt: "New",
+    alt: "New Products",
   },
   {
     id: 2,
@@ -101,11 +101,18 @@ const imageList = [
 
 const Categories = () => {
   return (
-    <div className="flex flex-col">
-      <p>Categories</p>
-      <div className="flex p-2">
+    <div className="flex flex-col w-min-max bg-white p-3 md:container mx-auto px-44">
+      <p className="font-bold">Categories</p>
+      <div className="grid grid-cols-11 gap-5 py-2">
         {imageList.map((image) => {
-          return <Category key={image.id} alt={image.alt} title={image.alt} img={image.src} />
+          return (
+            <Category
+              key={image.id}
+              alt={image.alt}
+              title={image.alt}
+              img={image.src}
+            />
+          )
         })}
       </div>
     </div>
