@@ -3,7 +3,7 @@ import React from "react"
 const Footer = () => {
   return (
     <div className="w-min-max bg-white">
-      <div className="flex flex-row justify-between p-3">
+      <div className="flex flex-row justify-between p-3 md:container mx-auto px-44">
         <ul className="text-sm text-gray-700">
           <li className="text-purple-800 text-lg">Download Getir!</li>
           <li>App store button</li>
