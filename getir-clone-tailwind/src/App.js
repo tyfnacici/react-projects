@@ -1,16 +1,16 @@
 import Navbar from "./components/Navbar"
-import Favorites from "./components/Favorites"
+import Favorites from "./pages/Favorites"
 import Card from "./components/Card"
 import Footer from "./pages/Footer"
 import Categories from "./pages/Categories"
 
 function App() {
   return (
-    <div className="w-min-full flex flex-col h-screen bg-slate-300">
+    <div className="w-min-full flex flex-col h-screen bg-white">
       {/* <Navbar></Navbar> */}
-      {/* <Favorites></Favorites> */}
+      <Favorites/>
       {/* <Card></Card> */}
-      <Categories/>
+      {/* <Categories/> */}
       {/* <Footer /> */}
     </div>
   )
