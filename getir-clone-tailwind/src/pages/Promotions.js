@@ -2,10 +2,10 @@ import React from "react"
 
 const Promotions = () => {
   return (
-    <div className="flex flex-col w-min-max bg-[#fafafa]">
+    <div className="flex flex-col w-min-max text-sm bg-[#f7f6f9]">
       <div className="p-3 md:container mx-auto px-44">
-        <p className="font-bold">Promotions</p>
-        <div className="flex gap-4 py-2">
+        <p className="font-bold pt-4">Promotions</p>
+        <div className="flex gap-4 py-2 pt-7">
           <img
             alt="promo1"
             className="w-[25rem]"
