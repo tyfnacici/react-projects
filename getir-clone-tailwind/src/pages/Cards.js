@@ -28,7 +28,7 @@ const imageList = [
 
 const Cards = () => {
   return (
-    <div className="flex flex-col w-min-max bg-[#fafafa]">
+    <div className="flex flex-col w-min-max bg-[#f7f6f9] pt-4 pb-10">
       <div className="p-3 md:container mx-auto px-44">
         <div className="flex gap-4 py-2">
           {imageList.map((image) => {

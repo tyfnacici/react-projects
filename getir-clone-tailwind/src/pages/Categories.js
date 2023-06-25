@@ -3,16 +3,6 @@ import Category from "../components/Category"
 
 const imageList = [
   {
-    id: 1,
-    src: require("../images/categories/new.jpeg"),
-    alt: "New Products",
-  },
-  {
-    id: 2,
-    src: require("../images/categories/special.jpeg"),
-    alt: "Special Offers",
-  },
-  {
     id: 3,
     src: require("../images/categories/beverage.jpeg"),
     alt: "Beverages",
@@ -101,9 +91,9 @@ const imageList = [
 
 const Categories = () => {
   return (
-    <div className="flex flex-col w-min-max bg-white p-3 md:container mx-auto px-44">
-      <p className="font-bold">Categories</p>
-      <div className="grid grid-cols-11 gap-5 py-2">
+    <div className="flex flex-col text-sm w-min-max bg-white p-3 md:container mx-auto px-44">
+      <p className="font-bold mt-2">Categories</p>
+      <div className="grid grid-cols-11 py-2 mt-2">
         {imageList.map((image) => {
           return (
             <Category

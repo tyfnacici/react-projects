@@ -120,10 +120,10 @@ const imageList = [
 
 const Favorites = () => {
   return (
-    <div className="flex flex-col w-min-max bg-[#fafafa]">
+    <div className="flex flex-col w-min-max bg-[#f7f6f9]">
       <div className="p-3 md:container mx-auto px-44">
-        <p className="font-bold">Favorites</p>
-        <div className="grid grid-cols-8 gap-1 py-2">
+        <p className="font-bold text-sm pt-8">Favorites</p>
+        <div className="grid grid-cols-8 gap-1 py-2 pt-8">
           {imageList.map((image) => {
             return (
               <Favorite

@@ -1,19 +1,23 @@
 import Navbar from "./components/Navbar"
-import Favorites from "./pages/Favorites"
-import Card from "./components/Card"
-import Footer from "./pages/Footer"
-import Categories from "./pages/Categories"
-import Cards from "./pages/Cards"
 import Hero from "./pages/Hero"
+import Categories from "./pages/Categories"
+import Promotions from "./pages/Promotions"
+import Favorites from "./pages/Favorites"
+import Cards from "./pages/Cards"
+import Footer from "./pages/Footer"
 
 function App() {
   return (
-    <div className="w-min-full flex flex-col h-screen bg-white">
-      {/* <Navbar></Navbar> */}
-      {/* <Cards/> */}
-      <Hero/>
-      {/* <Categories/> */}
-      {/* <Footer /> */}
+    <div className="w-min-full flex flex-col h-screen relative bg-white">
+      <Navbar />
+      <div>
+        <Hero />
+        <Categories />
+        <Promotions />
+        <Favorites />
+        <Cards />
+        <Footer />
+      </div>
     </div>
   )
 }

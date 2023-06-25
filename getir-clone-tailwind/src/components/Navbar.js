@@ -1,4 +1,4 @@
-import Reactz from "react"
+import React from "react"
 import getir from "../images/getir.svg"
 import getiryemek from "../images/getir-yemek.svg"
 import getirbüyük from "../images/getir-büyük.png"
@@ -7,7 +7,7 @@ import getircarsi from "../images/getir-carsi.png"
 
 const Navbar = () => {
   return (
-    <div className="pt-[.20rem] bg-[#4d3399] text-white text-base font-semibold">
+    <div className="pt-[.20rem] z-50 bg-[#4d3399] text-white text-base font-semibold sticky top-0">
       <div className="md:container mx-auto px-36 flex justify-between ">
         <div className="flex items-center space-x-[1.25rem]">
           <div className="relative bg-[#5d3ebc] px-5 rounded-t-lg">

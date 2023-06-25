@@ -6,10 +6,10 @@ import etbis from "../images/footer/etbis.png"
 
 const Footer = () => {
   return (
-    <div className="w-min-max bg-white">
+    <div className="w-min-max bg-white pt-6 pb-4">
       <div className="p-3 md:container mx-auto px-44">
         <div className="flex flex-row justify-between">
-          <ul className="text-sm text-gray-700 space-y-5">
+          <ul className="text-sm text-gray-700 space-y-5 pr-8">
             <li className="text-purple-800 text-lg">Download Getir!</li>
             <li>
               <a href="#">
@@ -54,7 +54,7 @@ const Footer = () => {
             <li><a href="#">Becoma a GetirLocals Businnes</a></li>
           </ul>
           <ul>
-            <img src={etbis} className="w-[5rem]" />
+            <img src={etbis} className="w-[6.5rem] shadow-md bg-white p-3 rounded-lg" />
           </ul>
         </div>
         <div className="flex text-sm justify-between pt-10 min-w-full">
